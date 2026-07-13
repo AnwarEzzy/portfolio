@@ -141,15 +141,31 @@ export default function CertificationsPage() {
               background: (cert as { featured?: boolean }).featured ? `${cert.color}06` : undefined,
               position: "relative", overflow: "hidden",
             }}>
-              {(cert as { featured?: boolean }).featured && (
-                <div style={{ position: "absolute", top: 10, right: 10, fontSize: "0.6rem", padding: "2px 7px", borderRadius: 99, background: `${cert.color}18`, border: `1px solid ${cert.color}30`, color: cert.color }}>★ Featured</div>
-              )}
               <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
                 <div style={{ width: 38, height: 38, borderRadius: 10, background: `${cert.color}12`, border: `1px solid ${cert.color}20`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.1rem", flexShrink: 0 }}>
                   {cert.icon}
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <h3 style={{ color: "var(--text)", fontSize: "0.82rem", fontWeight: 600, lineHeight: 1.35, marginBottom: 4 }}>{cert.title}</h3>
+                  <h3 style={{ color: "var(--text)", fontSize: "0.82rem", fontWeight: 600, lineHeight: 1.35, marginBottom: 4 }}>
+                    {cert.title}
+                    {(cert as { featured?: boolean }).featured && (
+                      <span style={{
+                        marginLeft: 6,
+                        fontSize: "0.58rem",
+                        padding: "1px 6px",
+                        borderRadius: 99,
+                        background: `${cert.color}18`,
+                        border: `1px solid ${cert.color}30`,
+                        color: cert.color,
+                        display: "inline-block",
+                        verticalAlign: "middle",
+                        fontWeight: 500,
+                        whiteSpace: "nowrap"
+                      }}>
+                        ★ Featured
+                      </span>
+                    )}
+                  </h3>
                   <p style={{ color: "var(--text-muted)", fontSize: "0.72rem", marginBottom: 6 }}>{cert.issuer}</p>
                   <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--text-sub)", fontSize: "0.68rem" }}>
                     <Calendar size={10} /> {cert.date}
