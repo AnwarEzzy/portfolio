@@ -48,79 +48,79 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="page-in page-section no-scroll-page">
+    <div className="page-in page-section no-scroll-page" style={{ padding: "36px 56px 24px" }}>
       <div className="bg-orb" style={{ width: 400, height: 400, background: "radial-gradient(circle, rgba(6,182,212,0.07), transparent)", top: 0, right: 0 }} />
 
       <motion.div custom={0} initial="hidden" animate="show" variants={fadeUp}>
         <p className="section-tag">Get In Touch</p>
         <h1 className="section-title">Let&apos;s Connect</h1>
-        <div className="divider" style={{ marginBottom: "16px" }} />
-        <p style={{ color: "var(--text-sub)", fontSize: "0.9rem", maxWidth: 480, marginBottom: 20, lineHeight: 1.7 }}>
+        <div className="divider" style={{ marginBottom: "12px" }} />
+        <p style={{ color: "var(--text-sub)", fontSize: "0.875rem", maxWidth: 480, marginBottom: 16, lineHeight: 1.6 }}>
           Passionate about building intelligent software through Artificial Intelligence and modern Software Engineering. Whether you have an AI project, software opportunity, or simply want to connect, feel free to reach out.
         </p>
       </motion.div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, maxWidth: 900 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, maxWidth: 900 }}>
         {/* Info */}
         <div>
           <motion.div custom={1} initial="hidden" animate="show" variants={fadeUp}>
             {/* Availability card */}
             <div style={{
-              padding: "16px 20px", borderRadius: 14, marginBottom: 20,
+              padding: "12px 18px", borderRadius: 14, marginBottom: 14,
               background: "rgba(74,222,128,0.05)", border: "1px solid rgba(74,222,128,0.2)"
             }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#4ade80", display: "inline-block", animation: "pulse 2s infinite" }} />
+                <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#4ade80", display: "inline-block", animation: "pulse 2s infinite" }} />
                 <div>
-                  <p style={{ color: "#4ade80", fontWeight: 600, fontSize: "0.875rem" }}>Available for AI & Software Projects</p>
-                  <p style={{ color: "var(--text-sub)", fontSize: "0.75rem", marginTop: 2 }}>AI Engineering • Full-Stack Development • AI Solutions</p>
+                  <p style={{ color: "#4ade80", fontWeight: 600, fontSize: "0.8rem" }}>Available for AI & Software Projects</p>
+                  <p style={{ color: "var(--text-sub)", fontSize: "0.7rem", marginTop: 1 }}>AI Engineering • Full-Stack Development • AI Solutions</p>
                 </div>
               </div>
             </div>
 
             {/* Contact info */}
-            <div className="card" style={{ padding: "20px 22px" }}>
-              <h3 style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.78rem", color: "var(--text-muted)", marginBottom: 18, letterSpacing: "0.1em", textTransform: "uppercase" }}>Contact Info</h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+            <div className="card" style={{ padding: "16px 20px" }}>
+              <h3 style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.75rem", color: "var(--text-muted)", marginBottom: 12, letterSpacing: "0.1em", textTransform: "uppercase" }}>Contact Info</h3>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 <a href="mailto:anwarezzirani69@gmail.com"
-                  style={{ display: "flex", alignItems: "center", gap: 12, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
-                  onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#fff"}
-                  onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
-                  <div style={{ width: 34, height: 34, borderRadius: 9, background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Mail size={14} color="#60a5fa" />
+                   style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.8rem", transition: "color 0.2s" }}
+                   onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#fff"}
+                   onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
+                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Mail size={12} color="#60a5fa" />
                   </div>
                   anwarezzirani69@gmail.com
                 </a>
                 <a href="https://wa.me/212709281228" target="_blank" rel="noopener noreferrer"
-                  style={{ display: "flex", alignItems: "center", gap: 12, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
-                  onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#4ade80"}
-                  onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
-                  <div style={{ width: 34, height: 34, borderRadius: 9, background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Phone size={14} color="#4ade80" />
+                   style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.8rem", transition: "color 0.2s" }}
+                   onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#4ade80"}
+                   onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
+                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Phone size={12} color="#4ade80" />
                   </div>
                   +212 709 281 228 · WhatsApp
                 </a>
-                <div style={{ display: "flex", alignItems: "center", gap: 12, color: "var(--text-sub)", fontSize: "0.875rem" }}>
-                  <div style={{ width: 34, height: 34, borderRadius: 9, background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <MapPin size={14} color="#34d399" />
+                <div style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-sub)", fontSize: "0.8rem" }}>
+                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <MapPin size={12} color="#34d399" />
                   </div>
                   Casablanca, Morocco 🇲🇦
                 </div>
                 <a href="https://github.com/AnwarEzzy" target="_blank" rel="noopener noreferrer"
-                  style={{ display: "flex", alignItems: "center", gap: 12, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
-                  onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#fff"}
-                  onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
-                  <div style={{ width: 34, height: 34, borderRadius: 9, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Github size={14} color="#fff" />
+                   style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.8rem", transition: "color 0.2s" }}
+                   onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#fff"}
+                   onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
+                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Github size={12} color="#fff" />
                   </div>
                   github.com/AnwarEzzy
                 </a>
                 <a href="https://www.linkedin.com/in/anwar-ezzirani" target="_blank" rel="noopener noreferrer"
-                  style={{ display: "flex", alignItems: "center", gap: 12, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
-                  onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#60a5fa"}
-                  onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
-                  <div style={{ width: 34, height: 34, borderRadius: 9, background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Linkedin size={14} color="#60a5fa" />
+                   style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.8rem", transition: "color 0.2s" }}
+                   onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#60a5fa"}
+                   onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
+                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Linkedin size={12} color="#60a5fa" />
                   </div>
                   linkedin/anwar-ezzirani
                 </a>
@@ -140,43 +140,43 @@ export default function ContactPage() {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="card" style={{ padding: "20px 24px" }}>
-              <h3 style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.78rem", color: "var(--text-muted)", marginBottom: 12, letterSpacing: "0.1em", textTransform: "uppercase" }}>Send a Message</h3>
-              <div style={{ marginBottom: 12 }}>
-                <label style={{ display: "block", fontSize: "0.75rem", color: "var(--text-sub)", marginBottom: 6 }}>Name</label>
-                <input type="text" name="name" value={form.name} onChange={handleChange} required placeholder="Your name" className="form-input" />
+            <form onSubmit={handleSubmit} className="card" style={{ padding: "16px 20px" }}>
+              <h3 style={{ fontFamily: "'Space Mono', monospace", fontSize: "0.75rem", color: "var(--text-muted)", marginBottom: 8, letterSpacing: "0.1em", textTransform: "uppercase" }}>Send a Message</h3>
+              <div style={{ marginBottom: 10 }}>
+                <label style={{ display: "block", fontSize: "0.7rem", color: "var(--text-sub)", marginBottom: 4 }}>Name</label>
+                <input type="text" name="name" value={form.name} onChange={handleChange} required placeholder="Your name" className="form-input" style={{ padding: "8px 12px", fontSize: "0.8rem" }} />
+              </div>
+              <div style={{ marginBottom: 10 }}>
+                <label style={{ display: "block", fontSize: "0.7rem", color: "var(--text-sub)", marginBottom: 4 }}>Email</label>
+                <input type="email" name="email" value={form.email} onChange={handleChange} required placeholder="your@email.com" className="form-input" style={{ padding: "8px 12px", fontSize: "0.8rem" }} />
               </div>
               <div style={{ marginBottom: 12 }}>
-                <label style={{ display: "block", fontSize: "0.75rem", color: "var(--text-sub)", marginBottom: 6 }}>Email</label>
-                <input type="email" name="email" value={form.email} onChange={handleChange} required placeholder="your@email.com" className="form-input" />
-              </div>
-              <div style={{ marginBottom: 14 }}>
-                <label style={{ display: "block", fontSize: "0.75rem", color: "var(--text-sub)", marginBottom: 6 }}>Message</label>
-                <textarea name="message" value={form.message} onChange={handleChange} required rows={4} placeholder="Tell me about the opportunity..." className="form-input" style={{ resize: "none" }} />
+                <label style={{ display: "block", fontSize: "0.7rem", color: "var(--text-sub)", marginBottom: 4 }}>Message</label>
+                <textarea name="message" value={form.message} onChange={handleChange} required rows={3} placeholder="Tell me about the opportunity..." className="form-input" style={{ resize: "none", padding: "8px 12px", fontSize: "0.8rem" }} />
               </div>
               {error && (
                 <div style={{
-                  padding: "10px 14px",
+                  padding: "8px 12px",
                   borderRadius: 8,
-                  marginBottom: 16,
+                  marginBottom: 12,
                   background: "rgba(239,68,68,0.06)",
                   border: "1px solid rgba(239,68,68,0.2)",
                   color: "#f87171",
-                  fontSize: "0.8rem",
+                  fontSize: "0.75rem",
                   lineHeight: 1.4,
                   display: "flex",
                   alignItems: "flex-start",
                   gap: 8
                 }}>
-                  <AlertCircle size={15} style={{ flexShrink: 0, marginTop: 1 }} />
+                  <AlertCircle size={14} style={{ flexShrink: 0, marginTop: 1 }} />
                   <span>{error}</span>
                 </div>
               )}
 
-              <button type="submit" disabled={loading} className="btn-primary" style={{ width: "100%", justifyContent: "center", opacity: loading ? 0.7 : 1 }}>
+              <button type="submit" disabled={loading} className="btn-primary" style={{ width: "100%", justifyContent: "center", opacity: loading ? 0.7 : 1, padding: "10px 20px", fontSize: "0.8rem" }}>
                 {loading ? (
-                  <span style={{ width: 16, height: 16, border: "2px solid rgba(255,255,255,0.3)", borderTopColor: "#fff", borderRadius: "50%", display: "inline-block", animation: "spin 0.7s linear infinite" }} />
-                ) : <Send size={15} />}
+                  <span style={{ width: 14, height: 14, border: "2px solid rgba(255,255,255,0.3)", borderTopColor: "#fff", borderRadius: "50%", display: "inline-block", animation: "spin 0.7s linear infinite" }} />
+                ) : <Send size={13} />}
                 {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
