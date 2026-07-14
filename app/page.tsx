@@ -99,7 +99,7 @@ export default function HomePage() {
                 style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
                 <a href="/cv.pdf" download className="btn-primary">
                   <Download size={16} />
-                  Download CV
+                  Download Resume
                 </a>
                 <Link href="/projects" className="btn-outline">
                   View Projects
