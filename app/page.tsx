@@ -62,7 +62,7 @@ export default function HomePage() {
       }} />
 
       {/* Hero Section */}
-      <div className="px-4 md:px-[56px] py-12 md:py-0" style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", position: "relative", zIndex: 1 }}>
+      <div className="px-4 md:px-[56px] py-12 md:py-0" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", width: "100%", position: "relative", zIndex: 1 }}>
         <div style={{ maxWidth: 920, width: "100%" }}>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-[60px] items-center w-full">
             {/* LEFT: Text */}
