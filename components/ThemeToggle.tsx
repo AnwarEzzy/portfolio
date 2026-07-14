@@ -30,18 +30,6 @@ export default function ThemeToggle() {
         transition: "all 0.25s ease",
         boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
       }}
-      onMouseEnter={e => {
-        const el = e.currentTarget as HTMLElement;
-        el.style.transform = "rotate(20deg) scale(1.08)";
-        el.style.borderColor = "rgba(59,130,246,0.4)";
-        el.style.boxShadow = "0 6px 20px rgba(59,130,246,0.25)";
-      }}
-      onMouseLeave={e => {
-        const el = e.currentTarget as HTMLElement;
-        el.style.transform = "rotate(0deg) scale(1)";
-        el.style.borderColor = "var(--border)";
-        el.style.boxShadow = "0 4px 16px rgba(0,0,0,0.2)";
-      }}
     >
       {theme === "dark"
         ? <Sun size={18} color="#f59e0b" />

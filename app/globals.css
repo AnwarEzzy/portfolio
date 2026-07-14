@@ -552,3 +552,14 @@ html.light .grid-pattern { opacity: 0.06 !important; }
   }
 }
 
+/* Theme toggle hover and active states */
+@media (hover: hover) {
+  .theme-toggle-btn:hover {
+    transform: rotate(20deg) scale(1.08) !important;
+    border-color: rgba(59,130,246,0.4) !important;
+    box-shadow: 0 6px 20px rgba(59,130,246,0.25) !important;
+  }
+}
+.theme-toggle-btn:active {
+  transform: scale(0.95) !important;
+}
