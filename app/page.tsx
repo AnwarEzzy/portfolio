@@ -97,7 +97,7 @@ export default function HomePage() {
               <motion.div custom={5} initial="hidden" animate="show" variants={fadeUp}
                 className="flex flex-wrap justify-center md:justify-start gap-3"
                 style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
-                <a href="/cv.pdf" download className="btn-primary">
+                <a href="/AEzzirani-Resume.pdf" download="AEzzirani-Resume.pdf" className="btn-primary">
                   <Download size={16} />
                   Download Resume
                 </a>
