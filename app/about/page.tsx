@@ -54,7 +54,7 @@ export default function AboutPage() {
         <div className="divider" />
       </motion.div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40, maxWidth: 1000, overflowY: "auto", flex: 1, paddingRight: "6px" }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-[1000px] overflow-y-auto flex-1 pr-1.5">
         {/* Bio */}
         <div>
           <motion.div custom={1} initial="hidden" animate="show" variants={fadeUp}>

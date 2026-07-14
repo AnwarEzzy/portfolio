@@ -48,7 +48,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="page-in page-section no-scroll-page" style={{ padding: "36px 56px 24px" }}>
+    <div className="page-in page-section no-scroll-page px-5 py-[92px] md:px-14 md:py-9">
       <div className="bg-orb" style={{ width: 400, height: 400, background: "radial-gradient(circle, rgba(6,182,212,0.07), transparent)", top: 0, right: 0 }} />
 
       <motion.div custom={0} initial="hidden" animate="show" variants={fadeUp}>
@@ -60,7 +60,7 @@ export default function ContactPage() {
         </p>
       </motion.div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, maxWidth: 900 }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-[900px] overflow-y-auto md:overflow-visible flex-1">
         {/* Info */}
         <div>
           <motion.div custom={1} initial="hidden" animate="show" variants={fadeUp}>
