@@ -4,19 +4,18 @@ import { motion } from "framer-motion";
 
 const categories = [
   {
-    title: "Frontend",
-    emoji: "🎨",
-    color: "#3b82f6",
+    title: "Artificial Intelligence",
+    emoji: "🤖",
+    color: "#f59e0b",
     skills: [
-      "React.js",
-      "Next.js",
-      "React Native",
-      "JavaScript (ES6+)",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-      "Bootstrap",
-      "Vite"
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "LLMs",
+      "AI Agents",
+      "RAG",
+      "Prompt Engineering",
+      "Data Science"
     ],
   },
   {
@@ -35,6 +34,22 @@ const categories = [
     ],
   },
   {
+    title: "Frontend",
+    emoji: "🎨",
+    color: "#3b82f6",
+    skills: [
+      "React.js",
+      "Next.js",
+      "React Native",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Vite"
+    ],
+  },
+  {
     title: "Databases",
     emoji: "🗄️",
     color: "#10b981",
@@ -50,21 +65,6 @@ const categories = [
       "Prisma ORM",
       "Doctrine ORM",
       "Eloquent ORM"
-    ],
-  },
-  {
-    title: "Artificial Intelligence",
-    emoji: "🤖",
-    color: "#f59e0b",
-    skills: [
-      "Python",
-      "Machine Learning",
-      "Deep Learning",
-      "LLMs",
-      "AI Agents",
-      "RAG",
-      "Prompt Engineering",
-      "Data Science"
     ],
   },
   {
