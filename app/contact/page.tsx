@@ -84,7 +84,7 @@ export default function ContactPage() {
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 <a href="mailto:anwarezzirani69@gmail.com"
                    style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.8rem", transition: "color 0.2s" }}
-                   onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#fff"}
+                   onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "var(--text)"}
                    onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
                   <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(59,130,246,0.1)", border: "1px solid rgba(59,130,246,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <Mail size={12} color="#60a5fa" />
@@ -108,10 +108,10 @@ export default function ContactPage() {
                 </div>
                 <a href="https://github.com/AnwarEzzy" target="_blank" rel="noopener noreferrer"
                    style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.8rem", transition: "color 0.2s" }}
-                   onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#fff"}
+                   onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "var(--text)"}
                    onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
-                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Github size={12} color="#fff" />
+                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "var(--surface)", border: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Github size={12} color="var(--text)" />
                   </div>
                   github.com/AnwarEzzy
                 </a>
