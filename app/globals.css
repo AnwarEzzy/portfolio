@@ -24,6 +24,9 @@
   --card-shadow:   rgba(0,0,0,0.4);
   --scrollbar-bg:  #050508;
   --orb-opacity:   1;
+  --github-bg:     rgba(255,255,255,0.05);
+  --github-border: rgba(255,255,255,0.1);
+  --github-icon:   #ffffff;
 }
 
 /* ── LIGHT MODE ── */
@@ -49,6 +52,9 @@ html.light {
   --card-shadow:   rgba(59,130,246,0.08);
   --scrollbar-bg:  #f0f4ff;
   --orb-opacity:   0.5;
+  --github-bg:     rgba(15,23,42,0.06);
+  --github-border: rgba(15,23,42,0.12);
+  --github-icon:   #0f172a;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

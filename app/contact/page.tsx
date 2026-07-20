@@ -110,8 +110,8 @@ export default function ContactPage() {
                    style={{ display: "flex", alignItems: "center", gap: 10, color: "var(--text-sub)", textDecoration: "none", fontSize: "0.8rem", transition: "color 0.2s" }}
                    onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "var(--text)"}
                    onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "var(--text-sub)"}>
-                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "var(--surface)", border: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Github size={12} color="var(--text)" />
+                  <div style={{ width: 30, height: 30, borderRadius: 8, background: "var(--github-bg)", border: "1px solid var(--github-border)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Github size={12} color="var(--github-icon)" />
                   </div>
                   github.com/AnwarEzzy
                 </a>
